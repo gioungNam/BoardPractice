@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>글 작성하기</h1>
+	<form action="/board" method="post">
+		<div>
+		<label for="post_title">글 제목</label>
+		<input id="post_title" type="text" name="post_title">
+		</div>
+		<div>
+		<label for="post_contents" style="">글 내용</label>
+		<textarea id="post_contents" name="post_contents" rows="4" cols="50"></textarea>
+		</div>
+		<input type="submit" value="작성하기">
+	</form>
+</body>
+</html>
